@@ -12,6 +12,11 @@
   src: url("../assets/fonts/formular-regular-trial.otf");
   font-weight: 400;
 }
+@font-face {
+  font-family: "formular";
+  src: url("../assets/fonts/formular-bold-trial.otf");
+  font-weight: 700;
+}
 
 /* reset styles */
 *, 
@@ -25,20 +30,25 @@ a {
   text-decoration: none;
   color: var(--txt-color);
 }
-h2 {
-  font-size: var(--fs-lg);
-}
 body {
   font-family: "formular";
   color: var(--txt-color);
 }
+h2 {
+  font-size: var(--fs-lg);
+}
 h1 {
   font-size: var(--fs-xl);
+}
+/* general styles */ 
+ul {
+  list-style: none;
 }
 h1 span {
   display: block;
   text-transform: capitalize;
 }
+/* hero section */
 .hero {
   font-size: var(--fs-sm); 
 }
@@ -59,4 +69,13 @@ h1 span {
   background-color: var(--main-bg);
   padding: 1rem;
 }
-
+.tags {
+  display: flex;
+  gap: 10px;
+}
+.tags li {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
