@@ -5,6 +5,7 @@
 
   --fs-sm: 1.25rem; /* 20px */
   --fs-lg: 3.5rem; /* 56px */
+  --fs-xl: 5.125rem;
 }
 @font-face {
   font-family: "formular";
@@ -30,10 +31,9 @@ h2 {
 body {
   font-family: "formular";
   color: var(--txt-color);
-  padding-block: 4rem;
 }
 h1 {
-  font-size: 5.125rem;
+  font-size: var(--fs-xl);
 }
 h1 span {
   display: block;
@@ -42,3 +42,21 @@ h1 span {
 .hero {
   font-size: var(--fs-sm); 
 }
+.projects {
+  background-color: var(--secondary-bg);
+}
+/* components */
+.card {
+  background: var(--main-bg);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.card__header {
+  background-color: red;
+  padding: 1rem;
+}
+.card__body {
+  background-color: var(--main-bg);
+  padding: 1rem;
+}
+
