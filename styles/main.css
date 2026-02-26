@@ -1,3 +1,11 @@
+:root {
+  --txt-color: #1c1c21;
+  --main-bg: #FFFFFF;
+  --secondary-bg: #EDEEF1; 
+
+  --fs-sm: 1.25rem; /* 20px */
+  --fs-lg: 3.5rem; /* 56px */
+}
 @font-face {
   font-family: "formular";
   src: url("../assets/fonts/formular-regular-trial.otf");
@@ -12,6 +20,25 @@
   margin: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  color: var(--txt-color);
+}
+h2 {
+  font-size: var(--fs-lg);
+}
 body {
   font-family: "formular";
+  color: var(--txt-color);
+  padding-block: 4rem;
+}
+h1 {
+  font-size: 5.125rem;
+}
+h1 span {
+  display: block;
+  text-transform: capitalize;
+}
+.hero {
+  font-size: var(--fs-sm); 
 }
