@@ -34,6 +34,12 @@ body {
   font-family: "formular";
   color: var(--txt-color);
 }
+main {
+  font-size: var(--fs-sm);
+}
+main section:nth-child(even) {
+  background-color: var(--secondary-bg); 
+}
 h2 {
   font-size: var(--fs-lg);
 }
@@ -52,10 +58,12 @@ h1 span {
 .hero {
   font-size: var(--fs-sm); 
 }
-.projects {
-  background-color: var(--secondary-bg);
-}
 /* components */
+/* card component */
+.tags {
+  display: flex;
+  gap: 10px;
+}
 .card {
   background: var(--main-bg);
   border-radius: 15px;
@@ -69,13 +77,16 @@ h1 span {
   background-color: var(--main-bg);
   padding: 1rem;
 }
-.tags {
-  display: flex;
-  gap: 10px;
-}
-.tags li {
+.card .tag {
   text-transform: uppercase;
   font-weight: 700;
   padding: 5px 15px;
   border-radius: 5px;
+}
+/* expertise section */
+.expertise .tag {
+  text-transform: capitalize;
+  padding: 1.5rem 2rem;
+  border: 1px solid var(--txt-color);
+  border-radius: 50px;
 }
