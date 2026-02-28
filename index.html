@@ -1,63 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/main.css">
-  <title>Johan Lasso | Frontend Developer</title>
-</head>
-<body>
-  <header>
-    <!-- 
-      aria-label gives meaning to the element
-      if the HTML can not 
-    -->
-    <a href="./index.html" aria-label="Homepage">
-      <strong>johan lasso</strong>
-    </a>    
-  </header>
-  <main class="container">
-    <section class="hero">
-      <h1>
-        <span>hi, i'm johan</span>
-        <span>frontend developer</span>
-      </h1> 
-      <p class="hero__text">
-        I’m a frontend developer in training, focused on building clean, responsive web interfaces while learning modern web technologies.
-      </p>
-    </section> 
-    <section class="projects">
-      <h2>Projects</h2>
-
-      <article class="card">
-        <header class="card__header">
-          <h3 class="card__title">personal portfolio</h3>
-        </header>
-        <div class="card__body">
-          <p class="card__content">
-            Responsive portfolio built with semantic HTML and modern CSS, focusing on clean structure and readability.
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Johan Lasso | Frontend Developer</title>
+  </head>
+  <body>
+    <header class="container">
+      <!-- 
+        aria-label gives meaning to the element
+        if the HTML can not 
+      -->
+      <a href="./index.html" aria-label="Homepage" class="header__logo">
+        <strong>johan lasso</strong>
+      </a>    
+    </header>
+    <main class="container">
+      <section class="section hero">
+        <div class="section__inner">
+          <h1>
+            <span>hi, i'm johan</span>
+            <span>frontend developer</span>
+          </h1> 
+          <p class="hero__text">
+            I’m a frontend developer in training, focused on building clean, responsive web interfaces while learning modern web technologies.
           </p>
+        </div>
+      </section> 
+      <section class="projects">
+        <div class="section__inner">
+          <h2>Projects</h2>
+
+          <div class="projects__list">
+            <article class="card">
+              <header class="card__header">
+                <h3 class="card__title">personal portfolio</h3>
+              </header>
+
+              <div class="card__body"> 
+                <p class="card__content"> Responsive portfolio built with semantic HTML and modern CSS, focusing on clean structure and readability. 
+                </p> 
+                <ul class="tags">
+                  <li class="tag">html</li>
+                  <li class="tag">css</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section expertise">
+        <div class="section__inner">
+          <h2>Expertise</h2>
+
           <ul class="tags">
-            <li class="tag">html</li>
-            <li class="tag">css</li>
+            <li class="tag">Component-Driven</li>
+            <li class="tag">semantic HTML</li>
+            <li class="tag">modern CSS</li>
+            <li class="tag">problem solving</li>
+            <li class="tag">continuous learner</li>
           </ul>
         </div>
-      </article>
-    </section>
-    <section class="expertise">
-      <h2>Expertise</h2>
+      </section>
+    </main>
+    <footer>
 
-      <ul class="tags">
-        <li class="tag">Component-Driven</li>
-        <li class="tag">semantic HTML</li>
-        <li class="tag">modern CSS</li>
-        <li class="tag">problem solving</li>
-        <li class="tag">continuous learner</li>
-      </ul>
-    </section>
-  </main>
-  <footer>
-    
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
