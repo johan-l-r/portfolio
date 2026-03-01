@@ -57,8 +57,6 @@ ul {
 /* general styles */ 
 header {
   text-transform: uppercase;
-  max-width: 1100px;
-  margin-inline: auto;
   padding-block-start: var(--space-xl);
 }
 h1 {
@@ -84,12 +82,13 @@ main section:nth-child(even) {
 }
 /* hero section */
 .hero__text {
-  line-height: 33px;
+  line-height: 1.6;
 }
 .projects__list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: var(--space-md);
+  justify-content: center;
 }
 /* components */
 /* card component */
@@ -100,6 +99,7 @@ main section:nth-child(even) {
 }
 .card {
   background: var(--main-bg);
+  max-width: 420px;
   border-radius: 15px;
   overflow: hidden;
 }
@@ -110,7 +110,6 @@ main section:nth-child(even) {
 }
 .card__body {
   background-color: var(--main-bg);
-  padding: 1rem;
   padding: var(--space-md);
 }
 .card .tags {
